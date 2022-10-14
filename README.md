@@ -1,7 +1,7 @@
 # Ecommerce-Devweb
 Un site de E-commerce qui vend des vaisseaux lego
 
-##Repartition
+## Repartition
 
 Accueil : Lenny et Cécile
 
