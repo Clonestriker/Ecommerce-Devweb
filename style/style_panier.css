@@ -1,0 +1,61 @@
+
+.entete{
+    margin-right: 50%;
+    display: flex;
+    border: solid;
+    flex-direction: column;
+}
+
+.ss_titre{
+   
+
+}
+
+.conteneur{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.achat{
+    padding: 2% 2% 2% 2%;
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    border: solid;
+    flex-direction: column;
+
+}
+
+.article{
+    padding: 5% 5% 5% 5%;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    border: solid;
+
+}
+
+.commande{
+    margin-left: 20%;
+    padding: 1% 5% 1% 5%;
+    display: flex;
+    border: solid;
+    flex-direction: column;
+
+}
+
+
+.order_info{
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 1% 5% 5% 5%;
+    margin-right: 50%;
+    display: flex;
+    border: solid;
+    flex-direction: column;
+
+}
