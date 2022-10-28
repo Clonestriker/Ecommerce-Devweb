@@ -1,0 +1,19 @@
+.nav-bar{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-bar-element{
+    text-align: center;
+    min-width: 100%;
+}
+
+.nav-bar-items{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input{
+    width: 50%;
+}
