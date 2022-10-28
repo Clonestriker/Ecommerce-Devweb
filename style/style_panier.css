@@ -40,11 +40,13 @@
 }
 
 .commande{
+    margin-top: 5%;
     margin-left: 20%;
     padding: 1% 5% 1% 5%;
     display: flex;
     border: solid;
     flex-direction: column;
+    flex-wrap: nowrap;
 
 }
 
@@ -58,4 +60,10 @@
     border: solid;
     flex-direction: column;
 
+}
+
+.article_text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
 }
