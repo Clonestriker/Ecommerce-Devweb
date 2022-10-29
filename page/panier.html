@@ -20,7 +20,7 @@
 
     <div class="entete">
         <h1>Votre panier</h1>
-        <p class="ss_titre">petit texte </p>
+        <p class="ss_titre">Vous voulez déjà commander ? </p>
 
     </div>
     
@@ -28,34 +28,39 @@
 
     <div class="achat">
 
-        <div class="article">
-            <img src="" alt="photo produit" width="100px" height="100px">
-            <h2>Titre article</h2>
-            <div class="article_text">
-            <p>Quantité : </p>
-
-            <p>prix</p>
-            
-            <div>
-                enlever
+        <div class="article trait">
+            <img src="../sources/400x400.png" alt="photo produit" width="100px" height="100px">
+            <div class="titre_article">
+                
             </div>
-        </div>
-
-
-        </div>
-        <div class="article">
-            <img src="" alt="photo produit" width="100px" height="100px">
-            <h2>Titre article</h2>
-            <div class="article_text">
-            <p>Quantité : </p>
-
-            <p>prix</p>
             
-            <div>
-                enlever
+            <div class="article_text">
+                <h2>Titre article</h2>
+
+                <div class="ecart-2">Quantité : 1 </div>
+
+                <div class="ecart-2">25 €</div> <div class="droite ecart"><a style="text-decoration:underline ;">Enlever</a></div>
+            
+                
             </div>
+           
         </div>
 
+
+        <div class="article">
+            <img src="../sources/400x400.png" alt="photo produit" width="100px" height="100px">
+            
+            <div class="article_text">
+                <h2>Titre article</h2>
+
+                <div class="ecart-2">Quantité : 1 </div>
+
+                <div class="ecart-2">25 €</div> <div  class="droite"><a style="text-decoration:underline ;">Enlever</a></div>
+
+                
+            
+            </div>
+            
 
         </div>
 
@@ -66,21 +71,45 @@
 
     <div class="commande">
         <h2>Order Summary</h2>
-        <input>
-        <p>Total des articles :</p>
-        <p>Livraison :</p>
-        <p>total de la commande</p>
+        <input value="" placeholder="Entrez un code promo ici">
+        <div class="ecart">
 
-        <button>Valider la commande</button>
+            <div>Total des articles :</div><div class="droite">52.99 €</div>
+
+        </div>
+        <div class="ecart trait">
+
+            <div>Total des articles :</div><div class="droite">52.99 €</div>
+
+        </div>
+        <div class="ecart">
+
+            <div>Total de la commande :</div><div class="droite">58.98 €</div>
+
+        </div>
+        
+
+        <button class="btn" style="height: 50px;" >Valider la commande </button>
     </div>
 
     <div class="order_info">
-        <h2>Order information</h2>
+        <h2 class="trait ecart">Order information</h2>
 
-        <p>return policy</p>
+        <div style="opacity: 0.5;">
 
-        <p>Shipping Option</p>
+            <div class="trait ecart">Politique de renvoi <div class="droite"><strong>_</strong></div>
+            <br>
+                <div>Il n'y a pas de politique de renvoi envisagé, c'est tout ce que que vous devez
+                    savoir à propos de notre politique de renvoi.
+                </div>
+                </div>
 
+
+        <div class="trait ecart">Option d'envoi <div class="droite">+</div> </div>
+        <div class="trait ecart">Option d'envoi  <div class="droite">+</div></div>
+
+        </div>
+        
 
 
     </div>
