@@ -1,0 +1,59 @@
+.image-produit
+{
+    width: 300px;
+
+
+}
+
+.container-produit-row
+{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    margin: 2cm;
+}
+
+.container-produit-column
+{
+    display: flex;
+    flex-direction: column;
+    background-color: violet;
+    justify-content: center;
+    margin: 2cm;
+}
+
+.item-produit
+{
+
+    flex-grow:0;
+    flex-shrink: 1;
+    margin: 1cm;
+    background-color: aqua;
+
+}
+
+/* pour les boutons quantite */
+
+.container-boutons_quantite-row
+{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    justify-content: center;
+    margin: 2cm;
+}
+
+.item-boutons_quantite
+{
+    flex-grow:0;
+    flex-shrink: 1;
+    margin: 0.3cm;
+    font-size: 35px;
+    text-align: center;
+    border: none;
+}
+
+.item-boutons_number
+{
+    width: 3em;
+}
