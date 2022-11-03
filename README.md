@@ -1,5 +1,5 @@
 # Ecommerce-Devweb
-Un site de E-commerce qui vend des vaisseaux lego
+Un site de E-commerce qui vends des vaisseaux Lego
 
 ## Repartition
 
