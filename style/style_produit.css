@@ -1,32 +1,39 @@
 .image-produit
 {
-    width: 300px;
+    width: 30%;
+    height: 30%;
 
-
+    border-radius: 10px;
+    align-self: center;
+    margin-right: 3cm;
 }
 
 .container-produit-row
 {
     display: flex;
     flex-direction: row;
+    border: black 1px solid;
+    margin: 1cm;
+/*     padding: 1cm; */
     background-color: red;
-    margin: 2cm;
+    justify-content: center;
+    align-content: center;
 }
 
 .container-produit-column
 {
     display: flex;
     flex-direction: column;
-    background-color: violet;
+    background-color: green;
     justify-content: center;
-    margin: 2cm;
+    border: black 1px solid;
 }
+
+
+
 
 .item-produit
 {
-
-    flex-grow:0;
-    flex-shrink: 1;
     margin: 1cm;
     background-color: aqua;
 
@@ -36,9 +43,20 @@
 
 .container-boutons_quantite-row
 {
+    border: black 1px solid;
     display: flex;
     flex-direction: row;
     background-color: gray;
+    justify-content: center;
+}
+
+.container-boutons_groupes-boutons
+{
+    border: black 1px solid;
+
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
     justify-content: center;
     margin: 2cm;
 }
@@ -55,5 +73,37 @@
 
 .item-boutons_number
 {
-    width: 3em;
+    width: 2em;
+}
+
+
+/* ajustements ecran faible largeur */
+
+@media all and (max-width: 1300px)
+{
+    .container-produit-row
+    {
+        flex-direction: column;
+        background-color: violet;
+    }
+
+    .image-produit
+    {
+        width: 55%;
+        height: 55%;
+        margin-right: 0;
+
+    }
+
+    .container-boutons_quantite-row
+    {
+        flex-direction: column;
+        background-color: blue;
+    }
+    .container-boutons_groupes-boutons
+    {
+        margin: 0.5cm;
+    }
+
+
 }
