@@ -1,31 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Montserrat:wght@500&family=Roboto:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+    
 .nav-bar{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0em 15em 0em 15em;
     border-bottom: 1px solid black;
-
+    align-items: center;
 }
-
-.nav-bar-element{
-    text-align: center;
-    min-width: 100%;
     
+.nav-bar-element{
+    text-align: center;   
 }
-
+    
 .nav-bar-items{
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     padding: 0em 1em 0em 1em
 }
-
-input{
-    width: 50%;
+    
+.boutonRecherche{
     border: none;
+    background-color: white;
+}
+    
+    
+input{
+    border: none;
+}
+  
 
+@media only screen and (max-width: 1220px) {
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-bar-element{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-bar-items{
+        text-align: center;
+        font-family: 'Arial';
+    }
+
+    .search{
+        width: 50%;
+    }
 }
 
-div{
-    align-items: center;   
-}
+    button{
+        align-self: center;
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        display:inline-block;
+        vertical-align:middle;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+
+
+
