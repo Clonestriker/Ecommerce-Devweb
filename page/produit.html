@@ -9,7 +9,7 @@
 
 
     <div class="container-produit-row">
-        <img src="https://cdn.britannica.com/25/178225-050-AAF9B658/Desert-tortoise.jpg" alt="image du produit" class="image-produit">
+        <img src="../img/tortueBig.png" alt="image du produit" class="image-produit">
 
 
         <div class="container-produit-column">
@@ -36,25 +36,31 @@
 
             <div class="container-boutons_quantite-row">
 
-                <div class="container-boutons_quantite-row">
+                <div class="container-boutons_groupes-boutons">
                     <input type="button" value="-" class="item-boutons_quantite">
 
-                    <input type="number" value="2" class="item-boutons_quantite item-boutons_number" min="1">
+                    <input type="number" value="2" class="item-boutons_quantite item-boutons_number" min="1" max="99">
 
                     <input type="button" value="+" class="item-boutons_quantite">
                 </div>  
 
-                <div class="container-boutons_quantite-row">
-                    <input type="button" value="-" class="item-boutons_quantite">
+                <div class="container-boutons_groupes-boutons">
+
+                    <label for="tranches-ages"></label>
+                    <select id="tranches-ages" name="tranches-ages">
+                      <option value="3-5">3-5 ans</option>
+                      <option value="5-8">5-8 ans</option>
+                      <option value="8-12">8-12 ans</option>
+                      <option value="12-16">12-16 ans</option>
+                      <option value="16+">16 ans et +</option>
+                    </select>
+
                 </div>  
 
             </div>
             
         </div>
-
     </div>
-
-
 
 
 
