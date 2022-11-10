@@ -18,7 +18,108 @@
     color: black;
 }
 
+.filtre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.color1{background-color:blue ;}
+.color2{background-color: red;}
+.color3{background-color: orange ;}
+.color4{background-color: yellow;}
+.color5{background-color: green;}
+.color6{background-color: pink ;}
+.color7{background-color: purple;}
+.color8{background-color: white;}
+.color9{background-color: gray;}
+.color10{background-color: black;}
+
+.order1{order: 0;}
+.order2{order:1;}
+
+.cercle{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.lignecercle{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.boxcercle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 9px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20;
+    position: absolute;
+    width: 835px;
+    height: 682px;
+    left: 425px;
+    top: 413px;
+}
+
+.ligne{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 835px;
+    height: 331px;
+}
+
 .card{
-    flex-wrap: nowrap;
-    display: block;
+    flex-wrap: none;
+    flex-grow: 0;
+    width: 265px;
+    height: 311px;
+}
+
+.image{
+    position: absolute;
+    background: #C4C4C4;
+}
+
+.title{
+    position: relative;
+    left: 0%;
+    right: 9.93%;
+    top: 83.78%;
+    bottom: 7.96%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+}
+
+.prix{
+    position: relative;
+    left: 0%;
+    right: 43.75%;
+    top:91.74%;
+    bottom: 0%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
 }
