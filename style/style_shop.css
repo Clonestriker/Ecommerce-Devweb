@@ -1,0 +1,24 @@
+.bandeau{
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 0px;
+    border: 1px solid white;
+}
+
+.navbar input{
+    color: black;
+}
+
+.card{
+    flex-wrap: nowrap;
+    display: block;
+}
