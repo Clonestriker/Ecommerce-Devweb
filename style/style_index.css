@@ -30,12 +30,6 @@ nav {
     padding-right: 5px;
 }
 
-
-
-.boutonRecherche{
-    background-color: white;
-}
-
 nav .nav-list {
     display: flex;
     width: 100%;
@@ -44,8 +38,13 @@ nav .nav-list {
 }
 
 .boutonRecherche{
-    width: 500px;
-    padding-right: 19em;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+
+
+    background-color: white;
 }
 
 .nav-item{
@@ -112,6 +111,13 @@ nav .nav-list .nav-link {
         display: grid !important;
     }
 
+    .button-shop input{
+        width: 100px;
+      }
+
+ 
+
+
 }
 
 nav .navbar-toggler {
@@ -136,6 +142,11 @@ nav .navbar-toggler .bar {
 
 input:checked ~ nav .nav-list {
     transform: translateY(0);
+}
+
+input:checked ~ .content-menu {
+    transform: translateY(50%);
+    transition-duration: 1s;
 }
 
 input:checked ~ nav .navbar-toggler {
@@ -168,8 +179,8 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 }
 
 .Header04{
+    margin: 0% 25%;
     text-align: center;
-    padding: 0em 30em 0em 30em;
 }
 
 .Header04 a{
@@ -177,19 +188,21 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 }
 
 
-.button-shop {
-    background-color: #ffffff; /* Green */
-    border: none;
-    color: black;
-    border: 1px solid black;
-    margin: 0% 45%;
-    margin-top: 2%;
-    padding: 20px 15px;
+.button{
+    
+}
+
+.test{
+    text-align: center;
+}
+
+.image-menu{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-  }
+    margin-top: 4em;
+}
 
+.image-menu img{
+    width: 80%;
+}
