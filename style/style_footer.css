@@ -1,0 +1,152 @@
+
+footer .container
+{
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer ul	
+{
+	list-style: none;
+}
+
+footer
+{
+	margin-top: 40px;
+	position: relative;
+	width: 100%;
+	bottom: 0px;
+}
+
+.footer
+{
+    background-color: #E5E5E5;
+	padding: 70px 0;
+}
+
+
+.footer-col
+{
+	width: 20%;
+	padding: 0 5px;
+	border:3px solid transparent;
+}
+
+.footer-col-one
+{
+	width: 25%;
+	padding: 0 5px;
+	border:3px solid transparent;
+	margin-right: 3px;
+}
+
+.form-control{
+	color:lightgray;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	position:static;
+	border: 0.5px solid transparent;
+}
+.signUp{
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.3px;
+	color: #000000;
+	border: 1px solid transparent;
+}
+.button{
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid transparent;
+}
+.h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	margin-top: 2px;
+}
+.h5{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 22px;
+}
+.p3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.texte{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+footer ul
+{
+	padding-left: 0px;
+}
+
+.footer-col ul li:not(:last-child)
+{
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a,.footer-col ul li p
+{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: flex;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover,.footer-col ul li p:hover
+{
+	color: black;
+	padding-left: 8px;
+}
+
+.footer-col .social_links a
+{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social_links a:hover
+{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+@media(max-width: 780px)
+{
+	.footer-col
+	{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px)
+{
+	.footer-col
+	{
+		width: 100%;
+	}
+}
