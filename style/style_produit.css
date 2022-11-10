@@ -5,7 +5,10 @@ pied de page et la barre de navigation */
 {
     font-family: 'Courier New', Courier, monospace;
 }
-
+.description-produit
+{
+    text-align: justify;
+}
 
 
 .image-produit
@@ -110,7 +113,7 @@ pied de page et la barre de navigation */
     display: flex;
     flex-direction: row;
     background-color: white;
-    justify-content: center;
+    justify-content: space-around;
 
     padding: 0.3cm;
     flex-grow: 1;

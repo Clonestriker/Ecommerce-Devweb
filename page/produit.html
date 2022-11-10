@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../style/style_footer.css">
     <link rel="stylesheet" href="../style/style_produit.css">
 
-    <link rel="icon" href="../img/webIcon.ico">
+    <link rel="icon" href="../sources/webIcon.ico">
 
-    <title>Produit</title>
+    <title>Super Star Destroyer</title>
 </head>
 <body>
     <!-- barre de navigation -->
@@ -24,22 +24,24 @@
 
         <ul class="nav-list">
             <li class="nav-item">
-                <a class="nav-link">Ecommerce</a>
+                <a class="nav-link" href="../index.html">Ecommerce</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Shop</a>
+                <a class="nav-link" href="shop.html">Shop</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <button class="boutonRecherche" type="submit"><img src="/sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search">
+                <button class="boutonRecherche" type="submit"><img src="../sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search">
                 <div class="boutonRecherche">
                     <button  type="submit"></button>
-                    <img src="sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search"></div>
+                    <img src="../sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search"></div>
             </li>
             <li class="nav-item">
-                <img src="/sources/shop.png" alt="sac à main pour le shop" class = "img-shop"width="20">3
+                <a class="nav-link" href="panier.html">
+                    <img src="../sources/shop.png" alt="sac à main pour le shop" class = "img-shop"width="20">3
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-item">login</a>   
@@ -49,20 +51,22 @@
     </nav>
 
 
-    <!-- début de ma page -->
+    <!-- début de la page produit-->
 
 
     <div class="container-produit-row">
-        <img src="../img/tortueBig.png" alt="image du produit" class="image-produit">
+        <img src="../sources/superdestroyer.png" alt="image du produit" class="image-produit">
 
 
         <div class="container-produit-column">
             
-            <h1 class="text-produit">LEGO STAR WARS</h1>
-            <h2 class="text-produit">75,00 €</h2>
+            <h1 class="text-produit">Super Star Destroyer</h1>
+            <h2 class="text-produit">1599.00€</h2>
+            <h3 class="text-produit">16 ans et plus</h3>
 
-            <p class="item-produit text-produit">
-                Ce set Lego Star Wars est très bien. Il est même excellent.
+            <p class="item-produit text-produit description-produit">
+                Le Super Star Destroyer est le star destroyer personnel de Dark Vador.
+                Il apparaît dans Star Wars Épisode V : L'Empire contre-attaque. Ce set de LEGO est le plus cher au monde.
             </p>
 
             <div class="container-groupe-boutons">
@@ -71,24 +75,21 @@
 
                     <div class="container-bouton">
                         <input type="button" value="-" class="item-boutons_quantite text-produit">
-                        <input type="number" value="2" class="item-boutons_quantite item-boutons_number text-produit" min="1" max="99">
+                        <input type="number" value="1" class="item-boutons_quantite item-boutons_number text-produit" min="1" max="99">
                         <input type="button" value="+" class="item-boutons_quantite text-produit">
                     </div>  
 
                     <div class="container-bouton">
-                        <select id="tranches-ages" name="tranches-ages" class="text-produit dropdown-produit ">
-                        <option value="3-5" class="dropdown-item-produit text-produit">3-5 ans</option>
-                        <option value="5-8" class="dropdown-item-produit text-produit">5-8 ans</option>
-                        <option value="8-12" class="dropdown-item-produit text-produit">8-12 ans</option>
-                        <option value="12-16" class="dropdown-item-produit text-produit">12-16 ans</option>
-                        <option value="16+" class="dropdown-item-produit text-produit">16 ans et +</option>
+                        <select id="edition-notice" name="edition-boite" class="text-produit dropdown-produit ">
+                            <option value="notice_demat" class="dropdown-item-produit text-produit">Notice dématérialisée</option>
+                            <option value="notice_phys" class="dropdown-item-produit text-produit">Notice physique</option>
                         </select>
                     </div>  
 
                 </div>
                 <div class="boutons-row">
 
-                    <a href="" class="text-produit bouton bouton-panier"> Ajouter au panier - 75,00€</a>
+                    <a href="panier.html" class="text-produit bouton bouton-panier"> Ajouter au panier - 1599.00€</a>
 
 
                     <a href="" class="text-produit bouton bouton-acheter"> Acheter</a>
