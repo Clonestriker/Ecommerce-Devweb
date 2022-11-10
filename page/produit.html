@@ -4,66 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style_produit.css">
+
+    <link rel="stylesheet" href="../style/style_index.css">
     <link rel="stylesheet" href="../style/style_footer.css">
+    <link rel="stylesheet" href="../style/style_produit.css">
 
     <link rel="icon" href="../img/webIcon.ico">
 
     <title>Produit</title>
 </head>
 <body>
-    
+    <!-- barre de navigation -->
+    <nav>
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link">Ecommerce</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <button class="boutonRecherche" type="submit"><img src="/sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search">
+                <div class="boutonRecherche">
+                    <button  type="submit"></button>
+                    <img src="sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search"></div>
+            </li>
+            <li class="nav-item">
+                <img src="/sources/shop.png" alt="sac à main pour le shop" class = "img-shop"width="20">3
+            </li>
+            <li class="nav-item">
+                <a class="nav-item">login</a>   
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- début de ma page -->
+
+
     <div class="container-produit-row">
         <img src="../img/tortueBig.png" alt="image du produit" class="image-produit">
 
 
         <div class="container-produit-column">
             
-            <h1>LEGO STAR WARS</h1>
+            <h1 class="text-produit">LEGO STAR WARS</h1>
+            <h2 class="text-produit">75,00 €</h2>
 
-            <p class="item-produit">
-                I cant beat the shit out of you without getting any closer. Also,
-
-                Did you ever hear the tragedy of Darth Plagueis The Wise?
-                I thought not. It’s not a story the Jedi would tell you.
-                It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith,
-                so powerful and so wise he could use the Force to influence 
-                the midichlorians to create life… He had such a knowledge
-                of the dark side that he could even keep the ones he cared
-                about from dying. The dark side of the Force is a pathway
-                to many abilities some consider to be unnatural. He became
-                so powerful… the only thing he was afraid of was losing
-                his power, which eventually, of course, he did.
-                Unfortunately, he taught his apprentice everything he knew,
-                then his apprentice killed him in his sleep. Ironic.
-                He could save others from death, but not himself.
+            <p class="item-produit text-produit">
+                Ce set Lego Star Wars est très bien. Il est même excellent.
             </p>
 
-            <div class="container-boutons_quantite-row">
+            <div class="container-groupe-boutons">
+                <!-- container-boutons_quantite-row -->
+                <div class="boutons-row">
 
-                <div class="container-boutons_groupes-boutons">
-                    <input type="button" value="-" class="item-boutons_quantite">
+                    <div class="container-bouton">
+                        <input type="button" value="-" class="item-boutons_quantite text-produit">
+                        <input type="number" value="2" class="item-boutons_quantite item-boutons_number text-produit" min="1" max="99">
+                        <input type="button" value="+" class="item-boutons_quantite text-produit">
+                    </div>  
 
-                    <input type="number" value="2" class="item-boutons_quantite item-boutons_number" min="1" max="99">
+                    <div class="container-bouton">
+                        <select id="tranches-ages" name="tranches-ages" class="text-produit dropdown-produit ">
+                        <option value="3-5" class="dropdown-item-produit text-produit">3-5 ans</option>
+                        <option value="5-8" class="dropdown-item-produit text-produit">5-8 ans</option>
+                        <option value="8-12" class="dropdown-item-produit text-produit">8-12 ans</option>
+                        <option value="12-16" class="dropdown-item-produit text-produit">12-16 ans</option>
+                        <option value="16+" class="dropdown-item-produit text-produit">16 ans et +</option>
+                        </select>
+                    </div>  
 
-                    <input type="button" value="+" class="item-boutons_quantite">
-                </div>  
+                </div>
+                <div class="boutons-row">
 
-                <div class="container-boutons_groupes-boutons">
+                    <a href="" class="text-produit bouton bouton-panier"> Ajouter au panier - 75,00€</a>
 
-                    <label for="tranches-ages"></label>
-                    <select id="tranches-ages" name="tranches-ages">
-                      <option value="3-5">3-5 ans</option>
-                      <option value="5-8">5-8 ans</option>
-                      <option value="8-12">8-12 ans</option>
-                      <option value="12-16">12-16 ans</option>
-                      <option value="16+">16 ans et +</option>
-                    </select>
 
-                </div>  
+                    <a href="" class="text-produit bouton bouton-acheter"> Acheter</a>
 
+                </div>
             </div>
-            
+
         </div>
     </div>
 
