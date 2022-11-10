@@ -38,6 +38,13 @@ footer
 	border:3px solid transparent;
 }
 
+.footer-col
+{
+	width: 25%;
+	padding: 0 5px;
+	border:3px solid transparent;
+	margin-right: 3px;
+}
 
 .form-control{
 	color:lightgray;
