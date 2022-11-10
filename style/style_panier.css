@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Montserrat:wght@500&family=Roboto:wght@400;700&display=swap');
 
+html{
+    font-family: Montserrat;
+}
 .entete{
     margin-left: 5%;
     margin-right: 50%;
