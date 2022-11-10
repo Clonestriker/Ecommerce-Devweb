@@ -111,11 +111,12 @@ nav .nav-list .nav-link {
         display: grid !important;
     }
 
-    .Header04{
-        text-align: center;
-        padding: 0;
-        
-    }
+    .button-shop input{
+        width: 100px;
+      }
+
+ 
+
 
 }
 
@@ -141,6 +142,11 @@ nav .navbar-toggler .bar {
 
 input:checked ~ nav .nav-list {
     transform: translateY(0);
+}
+
+input:checked ~ .content-menu {
+    transform: translateY(50%);
+    transition-duration: 1s;
 }
 
 input:checked ~ nav .navbar-toggler {
@@ -174,26 +180,21 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 
 .Header04{
     margin: 0% 25%;
+    text-align: center;
 }
 
 .Header04 a{
-    text-align: center;
     font-size: 22px;
 }
 
 
-.button-shop {
-    background-color: #ffffff; /* Green */
-    border: none;
-    color: black;
-    border: 1px solid black;
-    margin: 0% 45%;
-    margin-top: 2%;
-    padding: 20px 15px;
-    text-decoration: none;
-    font-size: 16px;
+.button{
+    
+}
+
+.test{
     text-align: center;
-  }
+}
 
 .image-menu{
     display: flex;
