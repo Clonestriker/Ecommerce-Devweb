@@ -178,6 +178,7 @@ html{
     flex-grow: 0;
     width: 265px;
     height: 311px;
+    padding: 12px;
 }
 
 .image{
