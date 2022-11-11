@@ -146,6 +146,7 @@ html{
 
 .box{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
@@ -158,6 +159,7 @@ html{
 .filtreliste{
     border: 1px solid black;
     padding: 10px;
+    color: #7c7c7c;
 }
 
 .listederoulante{
@@ -168,12 +170,7 @@ html{
 
 .ligne{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-    width: 835px;
-    height: 331px;
+    flex-wrap: nowrap;
 }
 
 .card{
@@ -211,4 +208,57 @@ html{
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.4px;
+}
+
+.boutonbas{
+    display: flex;
+    justify-content: center;
+}
+
+.boutonplus{
+    border: 2px solid black ;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 935px) {
+    
+}
+
+@media (max-width: 675px){
+    .bandeau{
+        background-color: white;
+        color: #7c7c7c;
+    }
+    .conteneur{
+        flex-direction:column ;
+    }
+    .case{
+        flex-direction: column;
+    }
+    .boxfiltre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .case{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .boxcercle{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .listederoulante{
+        justify-content: center;
+    }
+    .ligne{
+        flex-direction: column;
+    }
+    .box{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 50px;
+    }
 }
