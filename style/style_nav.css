@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 15%;
+    height: 55px;
+    line-height: 75px;
+    border-bottom: 1px solid black;
+    
+}
+
+
+nav .nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-list .nav-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px;
+    transition: .4s;
+}
+
+.recherche{
+    display: flex;
+    text-align: center;
+    background-color: white;
+}
+.boutonRecherche{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+}
+
+
+nav .nav-list .nav-link {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 935px) {
+
+    nav {
+        padding: 0 2rem;
+    }
+
+    nav .nav-list .nav-item {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    nav{
+        background-color:black;
+        height: 75px;
+        display: flex;
+        justify-content: end;
+        z-index: 2;
+    }
+
+    nav .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        background: #404040;
+        opacity: 99%;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-120%);
+        z-index: 1;
+        transition: .6s;
+    }
+
+    nav .nav-list .nav-item {
+        align-self: center;
+    }
+
+    nav .navbar-toggler {
+        z-index: 3;
+        display: grid !important;
+    }
+
+    nav .nav-item .nav-link{
+        color: white;
+    }
+}
+
+nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 10%;
+    transition: .4s;
+}
+
+#toggle {
+    display: none;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+}
+
+
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
