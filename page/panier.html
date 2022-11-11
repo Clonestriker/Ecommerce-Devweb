@@ -6,24 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style_panier.css">
     <link rel="stylesheet" href="../style/style_footer.css">
+    <link rel="stylesheet" href="../style/style_nav.css">
 
     <link rel="icon" href="../img/webIcon.ico">
 
     <title>E-commerce Panier</title>
 </head>
 
-<header>
-
-
-
-</header>
 
 
 
 <body>
+    <input type="checkbox" id="toggle">
+    <nav style="background-color: black;">
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
 
-    <div class="entete">
+        <ul class="nav-list" >
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html" style="color:white;">Ecommerce</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html" style="color:white;">Shop</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:white;">About</a>
+            </li>
+
+            <li class="nav-item">
+                <div class="boutonRecherche">
+                    <button  type="submit"></button>
+                    <img src="../sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search">
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="panier.html" class="nav-link"><img src="../sources/shop.png" alt="sac à main pour le shop" class = "img-shop"width="20">3</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:white;">login</a>   
+            </li>
+        </ul>
+    </nav>
+
+    <div class="entete" style="margin-top:5%;">
         <h1>Votre panier</h1>
+        <br>
         <p class="ss_titre">Vous voulez déjà commander ? </p>
 
     </div>
