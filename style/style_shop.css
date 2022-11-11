@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Montserrat:wght@500&family=Roboto:wght@400;700&display=swap');
+
+html{
+    font-family: Montserrat;
+}
+
 .bandeau{
     background-color: black;
     color: white;
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-top: solid 1px white;
 
 }
 
-.navbar{
-    background-color: black;
-    color: white;
-    padding: 0px;
-    border: 1px solid white;
+nav{
+    background-color: white;
 }
 
-.navbar input{
-    color: black;
-}
+.textcolor{color: white;}
 
 .filtre{
     display: block;
