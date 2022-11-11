@@ -1,25 +1,71 @@
 
 /* l'utilisation d'une classe pour le style du texte garantit l'absence d'interférences avec le
 pied de page et la barre de navigation */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .text-produit
 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
 }
 .description-produit
 {
     text-align: justify;
 }
 
-
-.image-produit
+/* image */
+/* .image-produit
 {
     width: 30%;
     height: 30%;
 
-    border-radius: 5px;
+    border-radius: 2%;
     align-self: center;
     margin-right: 3cm;
+} */
+.container-images
+{
+
+    display: flex;
+    position: relative;
+    width: 50%;
+    flex-shrink: 0;
+    align-self: center;
+    margin-right: 3%;
+
+/*     background-color: purple;
+    border: 1px solid black; */
+
 }
+.container-images img 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+}
+.container-images .bouton 
+{
+    transition: 300ms;
+    background-color: black;
+    color: white;
+    border: none;
+
+    position: absolute;
+    top: 50%;
+    right:  0;
+
+    border-radius: 20px;
+
+    margin-right: 0;
+    margin-left: 0;
+     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+/*     cursor: pointer; */
+}
+
+
+
+/* description */
 
 .container-produit-row
 {
@@ -56,9 +102,14 @@ pied de page et la barre de navigation */
 
 /* pour les boutons */
 
+/* .container-groupe-boutons
+{
+    background-color: red;
+} */
+
 .boutons-row
 {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     display: flex;
     flex-direction: row;
@@ -69,8 +120,6 @@ pied de page et la barre de navigation */
     align-items:center;
 }
 
-
-
 .item-boutons_quantite
 {
     flex-grow:0;
@@ -79,11 +128,13 @@ pied de page et la barre de navigation */
     text-align: center;
     border: none;
     background: none;
+    transition: 300ms;
     color: gray;
 }
 
 .item-boutons_quantite:hover
 {
+    transition: 300ms;
     color: black;
 }
 
@@ -98,11 +149,12 @@ pied de page et la barre de navigation */
     margin-right: 1em;
     margin-left: 1em;
     border: none;
+    transition: 300ms;
     color: gray;
-
 }
 .dropdown-produit:hover
 {
+    transition: 300ms;
     color: black    ;
 }
 /* pour le dropdown et l'input */
@@ -141,15 +193,18 @@ pied de page et la barre de navigation */
 }
 .bouton-panier
 {
+    transition: 300ms;
     background-color: black;
 }
 .bouton-acheter
 {
+    transition: 300ms;
     background-color: blue;
 }
 
 .bouton:hover
 {
+    transition: 300ms;
     background-color: white;
     color: black;
 }
@@ -165,13 +220,11 @@ pied de page et la barre de navigation */
         flex-direction: column;
         margin: 1cm;
     }
-
-    .image-produit
+    .container-images
     {
-        width: 55%;
-        height: 55%;
-        margin-right: 0;
+        width: 85%;
     }
+
 }
 
 /*pour cacher les flèches sur l'input number
@@ -187,4 +240,5 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
     -moz-appearance:textfield;
 }
+
 

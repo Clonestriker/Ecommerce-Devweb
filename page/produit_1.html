@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/style_index.css">
+    <link rel="stylesheet" href="../style/style_footer.css">
+    <link rel="stylesheet" href="../style/style_produit.css">
+
+    <link rel="icon" href="../sources/webIcon.ico">
+
+    <title>Chasseur TIE</title>
+</head>
+<body>
+
+    <!-- barre de navigation -->
+
+<!-- 
+    <nav>
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Ecommerce</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <button class="boutonRecherche" type="submit"><img src="../sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search">
+                <div class="boutonRecherche">
+                    <button  type="submit"></button>
+                    <img src="../sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search"></div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="panier.html">
+                    <img src="../sources/shop.png" alt="sac à main pour le shop" class = "img-shop"width="20">3
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item">login</a>   
+            </li>
+        </ul>
+
+    </nav>
+ -->
+
+    <!-- début de la page produit -->
+
+    <div class="container-produit-row">
+        <div class="container-images">
+            <img src="../sources/produit_1_HD.png" alt="image du produit" class="image-produit" id="image-produit">
+            
+            <a href="" class="bouton" > > </a>
+        </div>
+
+
+        <div class="container-produit-column">
+            
+            <h1 class="text-produit">Chasseur TIE</h1>
+            <h2 class="text-produit">15.99€</h2>
+            <h3 class="text-produit">8 ans et plus</h3>
+            <br>
+            <p class="item-produit text-produit description-produit">
+                Le chasseur TIE est un des vaisseaux emblématiques de la série star Wars. Apparaissant dans les trois films de la trilogie originale, les chasseurs TIE sont des appareils redoutables de l'Empire galactique.
+                <br>
+                Ce set inclut trois figurines et des canons fonctionnels.
+            </p>
+
+            <div class="container-groupe-boutons">
+                <!-- container-boutons_quantite-row -->
+                <div class="boutons-row">
+                    <div class="container-bouton">
+                        <input type="button" value="-" class="item-boutons_quantite text-produit">
+                        <input type="number" value="1" class="item-boutons_quantite item-boutons_number text-produit" min="1" max="99">
+                        <input type="button" value="+" class="item-boutons_quantite text-produit">
+                    </div>  
+                    <div class="container-bouton">
+                        <select id="edition-notice" name="edition-boite" class="text-produit dropdown-produit ">
+                            <option value="notice_demat" class="dropdown-item-produit text-produit">Notice dématérialisée</option>
+                            <option value="notice_phys" class="dropdown-item-produit text-produit">Notice physique</option>
+                        </select>
+                    </div>  
+                </div>
+
+                <div class="boutons-row">
+                    <a href="panier.html" class="text-produit bouton bouton-panier"> Ajouter au panier - 15.99€</a>
+                    <a href="" class="text-produit bouton bouton-acheter"> Acheter</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../scripts/main_produit.js"></script>
+<!-- footer en bas -->
+
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-one">
+                        <p class="h3">Inscrivez-vous à notre newsletter</p>
+                        <p class="texte">
+                            Soyez le premier informé de nos offres spéciales, des lancements de nouveaux produits et des événements                      
+                        </p>
+                        <div class="signUp ">
+                            <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="button" type="button" id="button-addon2">S'inscrire</button>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <p class="h5">Boutique</p>
+                        <ul class="p3">
+                            <li><a href="#">LEGO Star Wars : La Saga complète</a></li>
+                            <li><a href="#">LEGO Star Wars II : La Trilogie originale</a></li>
+                            <li><a href="#">Star Wars : Les Aventures des Freemaker</a></li>
+                            <li><a href="#">LEGO Star Wars: The Phantom Menace</a></li>                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <p class="h5">Aide</p>
+                        <ul class="p3">
+                            <li><a href="#">Centre d'aide</a></li>
+                            <li><a href="#">Statut de la commande</a></li>                          
+                            <li><a href="#">Retour et garantie</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <p class="h5">A propos</p>
+                        <ul class="p3">
+                            <li><a href="#">A propos de nous</a></li>
+                            <li><a href="#">Responsabilité</a></li>
+                            <li><a href="#">Technologie & Innovation</a></li>
+                            <li><a href="#">Découvrez nos histoires</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>	
+    </footer>
+</body>
+
+</html>
