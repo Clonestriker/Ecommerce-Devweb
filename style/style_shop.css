@@ -15,33 +15,39 @@ html{
 
 }
 
-nav{
-    background-color: white;
+.conteneur{
+    display: flex;
+    gap: 10%;
+}
+.filtre{
+    padding: 20px;
 }
 
-.textcolor{color: white;}
+.filtre h3{
+    padding-bottom: 15px;
+}
+.filtre h4{
+    padding-bottom: 15px;
+}
 
-.filtre{
+.case {
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
-
-.filtre input{
+  
+.case input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
 }
-
+  
 .checkmark {
     position: absolute;
     top: 0;
@@ -50,13 +56,24 @@ nav{
     width: 25px;
     border: solid 1px black;
     background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+.case:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
 }
 
-.filtre input:checked ~ .checkmark:after {
+.case input:checked ~ .checkmark:after {
     display: block;
 }
 
-.filtre .checkmark:after {
+.case .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -77,6 +94,13 @@ nav{
     letter-spacing: -0.4px;
     padding-left: 10px;
 }
+
+.clear input{
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .color1{background-color:blue ;}
 .color2{background-color: red;}
@@ -129,6 +153,17 @@ nav{
     height: 682px;
     left: 425px;
     top: 413px;
+}
+
+.filtreliste{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.listederoulante{
+    display: flex;
+    padding: 20px;
+    flex-direction: row-reverse;
 }
 
 .ligne{
