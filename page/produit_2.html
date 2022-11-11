@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style_nav.css">
-    <link rel="stylesheet" href="../style/style_index.css">
     <link rel="stylesheet" href="../style/style_footer.css">
     <link rel="stylesheet" href="../style/style_produit.css">
 
@@ -19,41 +18,42 @@
 
     <input type="checkbox" id="toggle">
     <nav>
-        <label class="navbar-toggler" for="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a class="nav-link" href="../index.html">Ecommerce</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link">About</a>
-            </li>
-
-            <li class="nav-item">
-                <div class="boutonRecherche">
-                    <button  type="submit"></button>
-                    <img src="../sources/loupe noir.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search">
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a href="panier.html"><img src="../sources/shop.png" alt="sac à main pour le shop" class = "img-shop"width="20">3</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-item">login</a>   
-            </li>
-        </ul>
-    </nav>
+         <label class="navbar-toggler" for="toggle">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </label>
+ 
+         <ul class="nav-list">
+             <li class="nav-item">
+                 <a class="nav-link" href="index.html">Ecommerce</a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a class="nav-link" href="page/shop.html">Shop</a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a class="nav-link">About</a>
+             </li>
+ 
+             <li class="nav-item">
+                 <div class="boutonRecherche">
+                     <button  type="submit"></button>
+                     <img src="../sources/loupeNoire.png" alt="Bouton de recherche " width="20" ><input type="text" name="pass" placeholder="search">
+                 </div>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="../page/panier.html" class="nav-link"><img src="../sources/shop.png" alt="sac à main pour le shop" class = "img-shop" width="20">3</a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a class="nav-link">login</a>   
+             </li>
+         </ul>
+     </nav>
+ 
 
     <!-- début de la page produit -->
 
@@ -106,49 +106,49 @@
     <script src="../scripts/main_produit.js"></script>
 <!-- footer en bas -->
 
-    <footer>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col-one">
-                        <p class="h3">Inscrivez-vous à notre newsletter</p>
-                        <p class="texte">
-                            Soyez le premier informé de nos offres spéciales, des lancements de nouveaux produits et des événements                      
-                        </p>
-                        <div class="signUp ">
-                            <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <button class="button" type="button" id="button-addon2">S'inscrire</button>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <p class="h5">Boutique</p>
-                        <ul class="p3">
-                            <li><a href="#">LEGO Star Wars : La Saga complète</a></li>
-                            <li><a href="#">LEGO Star Wars II : La Trilogie originale</a></li>
-                            <li><a href="#">Star Wars : Les Aventures des Freemaker</a></li>
-                            <li><a href="#">LEGO Star Wars: The Phantom Menace</a></li>                            
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <p class="h5">Aide</p>
-                        <ul class="p3">
-                            <li><a href="#">Centre d'aide</a></li>
-                            <li><a href="#">Statut de la commande</a></li>                          
-                            <li><a href="#">Retour et garantie</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <p class="h5">A propos</p>
-                        <ul class="p3">
-                            <li><a href="#">A propos de nous</a></li>
-                            <li><a href="#">Responsabilité</a></li>
-                            <li><a href="#">Technologie & Innovation</a></li>
-                            <li><a href="#">Découvrez nos histoires</a></li>
-                        </ul>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-one">
+                    <p class="h3">Inscrivez-vous à notre newsletter</p>
+                    <p class="texte">
+                        Soyez le premier informé de nos offres spéciales, des lancements de nouveaux produits et des événements                      
+                    </p>
+                    <div class="signUp ">
+                        <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="button" type="button" id="button-addon2">S'inscrire</button>
                     </div>
                 </div>
-            </div>	
+                <div class="footer-col">
+                    <p class="h5">Boutique</p>
+                    <ul class="p3">
+                        <li><a href="#">LEGO Star Wars : La Saga complète</a></li>
+                        <li><a href="#">LEGO Star Wars II : La Trilogie originale</a></li>
+                        <li><a href="#">Star Wars : Les Aventures des Freemaker</a></li>
+                        <li><a href="#">LEGO Star Wars: The Phantom Menace</a></li>                            
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="h5">Aide</p>
+                    <ul class="p3">
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Statut de la commande</a></li>                          
+                        <li><a href="#">Retour et garantie</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="h5">A propos</p>
+                    <ul class="p3">
+                        <li><a href="#">A propos de nous</a></li>
+                        <li><a href="#">Responsabilité</a></li>
+                        <li><a href="#">Technologie & Innovation</a></li>
+                        <li><a href="#">Découvrez nos histoires</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>	
     </footer>
 </body>
 
