@@ -1,74 +1,141 @@
-.image-produit
+
+/* l'utilisation d'une classe pour le style du texte garantit l'absence d'interférences avec le
+pied de page et la barre de navigation */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.text-produit
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.description-produit
+{
+    text-align: justify;
+}
+
+/* image */
+/* .image-produit
 {
     width: 30%;
     height: 30%;
 
-    border-radius: 10px;
+    border-radius: 2%;
     align-self: center;
     margin-right: 3cm;
+} */
+.container-images
+{
+
+    display: flex;
+    position: relative;
+    width: 50%;
+    flex-shrink: 0;
+    align-self: center;
+    margin-right: 3%;
+
+/*     background-color: purple;
+    border: 1px solid black; */
+
 }
+.container-images img 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+}
+.container-images .bouton 
+{
+    transition: 300ms;
+    background-color: black;
+    color: white;
+    border: none;
+
+    position: absolute;
+    top: 50%;
+    right:  0;
+
+    border-radius: 20px;
+
+    margin-right: 0;
+    margin-left: 0;
+     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+/*     cursor: pointer; */
+}
+
+
+
+/* description */
 
 .container-produit-row
 {
     display: flex;
     flex-direction: row;
-    border: black 1px solid;
     margin: 1cm;
-/*     padding: 1cm; */
-    background-color: red;
-    justify-content: center;
+
+    justify-content: space-between;
     align-content: center;
+
+    margin-right: 18%;
+
+    /*     background-color: red;
+    border: black solid 1px; */
 }
 
 .container-produit-column
 {
     display: flex;
     flex-direction: column;
-    background-color: green;
-    justify-content: center;
-    border: black 1px solid;
+
+    justify-content:flex-start;
+
+    flex-grow: 1;
 }
-
-
-
-
 .item-produit
 {
-    margin: 1cm;
-    background-color: aqua;
-
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* pour les boutons quantite */
 
-.container-boutons_quantite-row
+
+
+
+/* pour les boutons */
+
+/* .container-groupe-boutons
 {
-    border: black 1px solid;
+    background-color: red;
+} */
+
+.boutons-row
+{
+    flex-wrap: nowrap;
+
     display: flex;
     flex-direction: row;
-    background-color: gray;
-    justify-content: center;
-}
 
-.container-boutons_groupes-boutons
-{
-    border: black 1px solid;
-
-    display: flex;
-    flex-direction: row;
-    background-color: purple;
-    justify-content: center;
-    margin: 2cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    justify-content: space-around;
+    align-items:center;
 }
 
 .item-boutons_quantite
 {
     flex-grow:0;
     flex-shrink: 1;
-    margin: 0.3cm;
-    font-size: 35px;
+
     text-align: center;
     border: none;
+    background: none;
+    transition: 300ms;
+    color: gray;
+}
+
+.item-boutons_quantite:hover
+{
+    transition: 300ms;
+    color: black;
 }
 
 .item-boutons_number
@@ -76,34 +143,102 @@
     width: 2em;
 }
 
+/* dropdown */
+.dropdown-produit
+{
+    margin-right: 1em;
+    margin-left: 1em;
+    border: none;
+    transition: 300ms;
+    color: gray;
+}
+.dropdown-produit:hover
+{
+    transition: 300ms;
+    color: black    ;
+}
+/* pour le dropdown et l'input */
+.container-bouton
+{
+    border: black 1px solid;
+
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-around;
+
+    padding: 0.3cm;
+    flex-grow: 1;
+    margin-right: 1cm;
+    margin-left: 1cm;
+}
+
+/* pour les boutons liens vers les autres pages */
+.bouton
+{
+
+    text-decoration: none;
+    overflow-wrap: unset;
+    text-align: center;
+
+    border: black solid 1px;
+    padding: 0.3cm;
+
+    color: white;
+
+    flex-grow: 1;
+
+    margin-right: 1cm;
+    margin-left: 1cm;
+}
+.bouton-panier
+{
+    transition: 300ms;
+    background-color: black;
+}
+.bouton-acheter
+{
+    transition: 300ms;
+    background-color: blue;
+}
+
+.bouton:hover
+{
+    transition: 300ms;
+    background-color: white;
+    color: black;
+}
+
+
 
 /* ajustements ecran faible largeur */
 
-@media all and (max-width: 1300px)
+@media all and (max-width: 1000px)
 {
     .container-produit-row
     {
         flex-direction: column;
-        background-color: violet;
+        margin: 1cm;
     }
-
-    .image-produit
+    .container-images
     {
-        width: 55%;
-        height: 55%;
-        margin-right: 0;
-
+        width: 85%;
     }
-
-    .container-boutons_quantite-row
-    {
-        flex-direction: column;
-        background-color: blue;
-    }
-    .container-boutons_groupes-boutons
-    {
-        margin: 0.5cm;
-    }
-
 
 }
+
+/*pour cacher les flèches sur l'input number
+
+https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box*/
+
+/* chrome, edge */
+input::-webkit-inner-spin-button {
+    /* testé sur chrome, edge. Ne marche pas sur Firefox */
+    display: none; 
+}
+/* firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+
